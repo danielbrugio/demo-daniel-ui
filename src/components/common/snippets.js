@@ -1,11 +1,11 @@
 export const ButtonSnippets = {
     variants: `
-    import { Button } from 'react-neon-ui'
+    import { Button } from 'react-daniel-ui'
     <Button variant='primary'> Primary </Button>
     <Button variant='secondary'> Secondary </Button>
     `,
     sizes: `
-    import { Button } from 'react-neon-ui'
+    import { Button } from 'react-daniel-ui'
     <Button size='small'>Small</Button>
     <Button size='medium'>Medium</Button>
     <Button size='large'>Large</Button>
@@ -14,18 +14,18 @@ export const ButtonSnippets = {
   
   export const NumberInputSnippets = {
     variants: `
-    import { NumberInput } from 'react-neon-ui'
+    import { NumberInput } from 'react-daniel-ui'
     <TextInput variant='primary' placeholder='Primary'/>
     <TextInput variant='secondary' placeholder='Secondary'/>
     `,
     sizes: `
-    import { NumberInput } from 'react-neon-ui'
+    import { NumberInput } from 'react-daniel-ui'
     <TextInput size='small' placeholder="Small"/>
     <TextInput size='medium' placeholder="Medium"/>
     <TextInput size='large' placeholder="Large"/>
     `,
     formatted: `
-    import { NumberInput } from 'react-neon-ui'
+    import { NumberInput } from 'react-daniel-ui'
     <TextInput />
     <TextInput formatted="number" />
     <TextInput formatted="currency" />
@@ -33,7 +33,7 @@ export const ButtonSnippets = {
     controlled: `
     import React, { useState } from "react";
     import "./App.css";
-    import { NumberInput } from "react-neon-ui";
+    import { NumberInput } from "react-daniel-ui";
     function App() {
       const [number, setNumber] = useState("");
       const handleChange = (e) => {
@@ -53,7 +53,7 @@ export const ButtonSnippets = {
     uncontrolled: `
     import React, { useRef, useState } from "react";
     import "./App.css";
-    import { NumberInput } from "react-neon-ui";
+    import { NumberInput } from "react-daniel-ui";
     function App() {
       const inputRef = useRef(null);
       const handleRef = () => {
@@ -74,12 +74,12 @@ export const ButtonSnippets = {
   
   export const TextInputSnippets = {
     variants: `
-    import { TextInput } from 'react-neon-ui'
+    import { TextInput } from 'react-daniel-ui'
     <TextInput variant='primary' placeholder='Primary'/>
     <TextInput variant='secondary' placeholder='Secondary'/>
     `,
     sizes: `
-    import { TextInput } from 'react-neon-ui'
+    import { TextInput } from 'react-daniel-ui'
     <TextInput size='small' placeholder="Small"/>
     <TextInput size='medium' placeholder="Medium"/>
     <TextInput size='large' placeholder="Large"/>
@@ -87,7 +87,7 @@ export const ButtonSnippets = {
     controlled: `
     import React, { useState } from "react";
     import "./App.css";
-    import { TextInput } from "react-neon-ui";
+    import { TextInput } from "react-daniel-ui";
     function App() {
       const [text, setText] = useState("");
       const handleChange = (e) => {
@@ -107,7 +107,7 @@ export const ButtonSnippets = {
     uncontrolled: `
     import React, { useRef, useState } from "react";
     import "./App.css";
-    import { TextInput } from "react-neon-ui";
+    import { TextInput } from "react-daniel-ui";
     function App() {
       const inputRef = useRef(null);
       const handleRef = () => {
@@ -128,7 +128,7 @@ export const ButtonSnippets = {
   
   export const SelectSnippets = {
     variants: `
-    import { Select } from 'react-neon-ui'
+    import { Select } from 'react-daniel-ui'
     <Select
       variant='primary'
       label='Select variant'
@@ -141,7 +141,7 @@ export const ButtonSnippets = {
     />
     `,
     sizes: `
-    import { Select } from 'react-neon-ui'
+    import { Select } from 'react-daniel-ui'
     <Select
       size='small'
       label='small'
@@ -159,7 +159,7 @@ export const ButtonSnippets = {
     />
     `,
     multiselect: `
-    import { Select } from 'react-neon-ui'
+    import { Select } from 'react-daniel-ui'
     <Select
       label='Multi Select'
       options={['primary', 'secondary']}
@@ -174,13 +174,13 @@ export const ButtonSnippets = {
   
   export const AutocompleteSnippets = {
     variants: `
-    import { Select } from 'react-neon-ui'
+    import { Select } from 'react-daniel-ui'
     const colors = ['blue','red','yellow','green','black','white]
     <Autocomplete variant='primary' suggestions={colors} />
     <Autocomplete variant='secondary' suggestions={colors} />
     `,
     sizes: `
-    import { Select } from 'react-neon-ui'
+    import { Select } from 'react-daniel-ui'
     const colors = ['blue','red','yellow','green','black','white]
     <Autocomplete size='small' suggestions={colors} />
     <Autocomplete size='medium' suggestions={colors} />
@@ -193,10 +193,10 @@ export const ButtonSnippets = {
     import React from 'react';
     import ReactDOM from 'react-dom';
     import { ThemeProvider } from 'styled-components';
-    import { cyberpunk } from 'react-neon-ui';
-    import { neon } from 'react-neon-ui';
+    import { mountain } from 'react-daniel-ui';
+    import { sea } from 'react-daniel-ui';
     ReactDOM.render(
-        <ThemeProvider theme={cyberpunk}>
+        <ThemeProvider theme={mountain}>
           ...your app content
         </ThemeProvider>,
       document.getElementById('root'),
@@ -206,30 +206,26 @@ export const ButtonSnippets = {
     export const customTheme = {
       textcolor: {
         primary: {
-          on: '#FF124F',
-          off: '#939393',
-          blur: '#FF124F'
+          on: '#22c1c3',
+          off: '#fdbb2d'
         },
         secondary: {
-          on: '#1afe49',
-          off: '#939393',
-          blur: '#1afe49'
+          on: '#373B44',
+          off: '#4286f4'
         }
       },
       bordercolor: {
         primary: {
-          on: '#FF00A0',
-          off: '#FF72CA',
-          blur: '#FF00A0'
+          on: '#fdbb2d',
+          off: '#22c1c3'
         },
         secondary: {
-          on: '#3d43b4',
-          off: '#8386f5',
-          blur: '#3d43b4'
+          on: '#4286f4',
+          off: '#373B44'
         }
       },
       fontFamily: {
-        name: 'monoton'
+        name: 'lobster'
       }
     }
     `,
@@ -247,25 +243,4 @@ export const ButtonSnippets = {
     `
   }
   
-  export const DividerSnippets = {
-    variants: `
-    import { Divider } from 'react-neon-ui'
-    <Divider variant='primary'/>
-    <Divider variant='secondary'/>
-    `,
-    orientations: `
-    import { Divider } from 'react-neon-ui'
-    <Divider orientation='horizontal'/>
-    <Divider orientation='vertical'/>
-    `,
-    thick: `
-    import { Divider } from 'react-neon-ui'
-    <Divider thick='2'/>
-    <Divider thick='4'/>
-    `,
-    disabled: `
-    import { Divider } from 'react-neon-ui'
-    <Divider />
-    <Divider disabled />
-    `
-  }
+  

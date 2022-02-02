@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Button, cyberpunk, neon } from 'react-neon-ui'
+import { Button, mountain, sea } from 'react-daniel-ui'
 import { useDispatch } from 'react-redux'
 import { changeThemeAction } from '../../redux/actions/changeThemeAction'
 
@@ -12,10 +12,10 @@ export const Header = ({ title, changeTag = () => {}, hideTags = false }) => {
   }, [tag, changeTag])
 
   const handleTheme = (theme) => {
-    if (theme === 'Neon') {
-      dispatch(changeThemeAction(neon))
-    } else if (theme === 'Cyberpunk') {
-      dispatch(changeThemeAction(cyberpunk))
+    if (theme === 'Sea') {
+      dispatch(changeThemeAction(sea))
+    } else if (theme === 'Mountain') {
+      dispatch(changeThemeAction(mountain))
     }
   }
 
@@ -41,14 +41,14 @@ export const Header = ({ title, changeTag = () => {}, hideTags = false }) => {
           {tag === 'useCases' && (
             <div className='header__tags--right'>
               <h3>Change Theme</h3>
-              <Button onClick={() => handleTheme('Neon')} theme={neon}>
-                Neon
+              <Button onClick={() => handleTheme('Sea')} theme={sea}>
+                Sea
               </Button>
               <Button
-                onClick={() => handleTheme('Cyberpunk')}
-                theme={cyberpunk}
+                onClick={() => handleTheme('Mountain')}
+                theme={mountain}
               >
-                CyberPunk
+                Mountain
               </Button>
             </div>
           )}

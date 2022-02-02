@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs'
-import { Autocomplete } from 'react-neon-ui'
+import { Autocomplete } from 'react-daniel-ui'
 import { Header } from '../Header'
 import { Table } from '../Table'
 import { top100Films } from '../common/mockdata'
 import { AutocompleteSnippets } from '../common/snippets'
 
-export const Autocomplete = () => {
+export const AutocompleteDemo = () => {
   const [tag, setTag] = useState('useCases')
 
   const changeTag = (e) => setTag(e)

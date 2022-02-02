@@ -4,8 +4,11 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Redirect
 } from 'react-router-dom'
+
+import { Theming } from './components/Theming'
+import { useSelector } from 'react-redux'
+import { ThemeProvider } from 'styled-components'
 import { Navbar } from './components/Navbar'
 import { ButtonDemo } from './components/Button'
 import { GettingStarted } from './components/GettingStarted'
@@ -13,9 +16,6 @@ import { TextInputDemo } from './components/TextInput'
 import { NumberInputDemo } from './components/NumberInput'
 import { SelectDemo } from './components/Select'
 import { AutocompleteDemo } from './components/Autocomplete'
-import { Theming } from './components/Theming'
-import { useSelector } from 'react-redux'
-import { ThemeProvider } from 'styled-components'
 
 function App() {
   const theme = useSelector((state) => state)
@@ -28,15 +28,15 @@ function App() {
           <div className='main'>
             <Routes>
               <Route path='/'>
-                <Redirect to='/gettingstarted' />
+                {/* <Redirect to='/gettingstarted' /> */}
               </Route>
-              <Route path='/button' element={ButtonDemo} />
-              <Route path='/gettingstarted' element={GettingStarted} />
-              <Route path='/textinput' element={TextInputDemo} />
-              <Route path='/numberinput' element={NumberInputDemo} />
-              <Route path='/select' element={SelectDemo} />
-              <Route path='/autocomplete' element={AutocompleteDemo} />
-              <Route path='/theming' element={Theming} />
+              <Route path='/button' element={<ButtonDemo />} />
+              <Route path='/gettingstarted' element={<GettingStarted />} />
+              <Route path='/textinput' element={<TextInputDemo />} />
+              <Route path='/numberinput' element={<NumberInputDemo />} />
+              <Route path='/select' element={<SelectDemo />} />
+              <Route path='/autocomplete' element={<AutocompleteDemo />} />
+              <Route path='/theming' element={<Theming />} />
               <Route />
             </Routes>
           </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NumberInput } from 'react-neon-ui'
+import { NumberInput } from 'react-daniel-ui'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import { Header } from '../Header'

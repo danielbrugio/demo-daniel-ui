@@ -4,7 +4,7 @@ import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import { TextInputSnippets } from '../common/snippets'
 import { Header } from '../Header'
 import { Table } from '../Table'
-import { TextInput } from 'react-neon-ui'
+import { TextInput } from 'react-daniel-ui'
 
 export const TextInputDemo = () => {
   const [tag, setTag] = useState('useCases')

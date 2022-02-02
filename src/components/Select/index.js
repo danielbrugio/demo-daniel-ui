@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs'
-import { Select } from 'react-neon-ui'
+import { Select } from 'react-daniel-ui'
 import { Header } from '../Header'
 import { Table } from '../Table'
 import { SelectSnippets } from '../common/snippets'

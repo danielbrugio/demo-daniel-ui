@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
-import logo from '../../assets/logo.png'
+
 
 const routes = [
   { url: '/gettingstarted', name: 'Getting Started' },
@@ -38,7 +38,7 @@ export const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <img className='logo' src={logo} />
+      <img className='logo' src={""} />
       <ul
         className={navBar ? 'navbar__list active' : 'navbar__list'}
         ref={navbarRef}
