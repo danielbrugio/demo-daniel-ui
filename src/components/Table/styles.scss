@@ -1,0 +1,43 @@
+.table {
+    padding: 50px;
+    h1 {
+      color: #ff124f;
+    }
+    p {
+      color: #939393;
+    }
+  }
+  
+  .table__grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    h3 {
+      color: #c0c0c0;
+      font-size: 25px;
+      border: 1px solid #c0c0c0;
+      padding: 5px;
+    }
+    span {
+      color: #939393;
+      font-size: 20px;
+      border: 1px solid #c0c0c0;
+      padding: 5px;
+      word-wrap: break-word;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .table {
+      padding: 10px;
+  
+      .table__grid > h3 {
+        font-size: 1em;
+        padding: 7px;
+      }
+  
+      .table__grid > span {
+        font-size: 0.95em;
+        padding: 7px;
+      }
+    }
+  }
