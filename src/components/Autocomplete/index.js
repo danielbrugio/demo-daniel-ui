@@ -7,7 +7,7 @@ import { Table } from '../Table'
 import { top100Films } from '../common/mockdata'
 import { AutocompleteSnippets } from '../common/snippets'
 
-export const AutocompleteDemo = () => {
+export const Autocomplete = () => {
   const [tag, setTag] = useState('useCases')
 
   const changeTag = (e) => setTag(e)
