@@ -1,36 +1,36 @@
 export const ButtonSnippets = {
-    variants: `
+  variants: `
     import { Button } from 'react-daniel-ui'
     <Button variant='primary'> Primary </Button>
     <Button variant='secondary'> Secondary </Button>
     `,
-    sizes: `
+  sizes: `
     import { Button } from 'react-daniel-ui'
     <Button size='small'>Small</Button>
     <Button size='medium'>Medium</Button>
     <Button size='large'>Large</Button>
     `
-  }
-  
-  export const NumberInputSnippets = {
-    variants: `
+};
+
+export const NumberInputSnippets = {
+  variants: `
     import { NumberInput } from 'react-daniel-ui'
     <TextInput variant='primary' placeholder='Primary'/>
     <TextInput variant='secondary' placeholder='Secondary'/>
     `,
-    sizes: `
+  sizes: `
     import { NumberInput } from 'react-daniel-ui'
     <TextInput size='small' placeholder="Small"/>
     <TextInput size='medium' placeholder="Medium"/>
     <TextInput size='large' placeholder="Large"/>
     `,
-    formatted: `
+  formatted: `
     import { NumberInput } from 'react-daniel-ui'
     <TextInput />
     <TextInput formatted="number" />
     <TextInput formatted="currency" />
-    `,
-    controlled: `
+    `
+  /* controlled: `
     import React, { useState } from "react";
     import "./App.css";
     import { NumberInput } from "react-daniel-ui";
@@ -69,22 +69,22 @@ export const ButtonSnippets = {
       );
     }
     export default App;
-    `
-  }
-  
-  export const TextInputSnippets = {
-    variants: `
+    ` */
+};
+
+export const TextInputSnippets = {
+  variants: `
     import { TextInput } from 'react-daniel-ui'
     <TextInput variant='primary' placeholder='Primary'/>
     <TextInput variant='secondary' placeholder='Secondary'/>
     `,
-    sizes: `
+  sizes: `
     import { TextInput } from 'react-daniel-ui'
     <TextInput size='small' placeholder="Small"/>
     <TextInput size='medium' placeholder="Medium"/>
     <TextInput size='large' placeholder="Large"/>
-    `,
-    controlled: `
+    `
+  /*  controlled: `
     import React, { useState } from "react";
     import "./App.css";
     import { TextInput } from "react-daniel-ui";
@@ -123,11 +123,11 @@ export const ButtonSnippets = {
       );
     }
     export default App;
-    `
-  }
-  
-  export const SelectSnippets = {
-    variants: `
+    ` */
+};
+
+export const SelectSnippets = {
+  variants: `
     import { Select } from 'react-daniel-ui'
     <Select
       variant='primary'
@@ -140,7 +140,7 @@ export const ButtonSnippets = {
       options={['primary', 'secondary']}
     />
     `,
-    sizes: `
+  sizes: `
     import { Select } from 'react-daniel-ui'
     <Select
       size='small'
@@ -158,7 +158,7 @@ export const ButtonSnippets = {
       options={['small', 'medium', 'large']}
     />
     `,
-    multiselect: `
+  multiselect: `
     import { Select } from 'react-daniel-ui'
     <Select
       label='Multi Select'
@@ -170,26 +170,26 @@ export const ButtonSnippets = {
       options={['primary', 'secondary']}
     />
     `
-  }
-  
-  export const AutocompleteSnippets = {
-    variants: `
+};
+
+export const AutocompleteSnippets = {
+  variants: `
     import { Select } from 'react-daniel-ui'
     const colors = ['blue','red','yellow','green','black','white]
     <Autocomplete variant='primary' suggestions={colors} />
     <Autocomplete variant='secondary' suggestions={colors} />
     `,
-    sizes: `
+  sizes: `
     import { Select } from 'react-daniel-ui'
     const colors = ['blue','red','yellow','green','black','white]
     <Autocomplete size='small' suggestions={colors} />
     <Autocomplete size='medium' suggestions={colors} />
     <Autocomplete size='large' suggestions={colors} />
     `
-  }
-  
-  export const ThemeSnippets = {
-    changeTheme: `
+};
+
+export const ThemeSnippets = {
+  changeTheme: `
     import React from 'react';
     import ReactDOM from 'react-dom';
     import { ThemeProvider } from 'styled-components';
@@ -202,7 +202,7 @@ export const ButtonSnippets = {
       document.getElementById('root'),
     );
     `,
-    themeTemplate: `
+  themeTemplate: `
     export const customTheme = {
       textcolor: {
         primary: {
@@ -229,7 +229,7 @@ export const ButtonSnippets = {
       }
     }
     `,
-    customTheme: `
+  customTheme: `
     import React from 'react';
     import ReactDOM from 'react-dom';
     import { ThemeProvider } from 'styled-components';
@@ -241,6 +241,4 @@ export const ButtonSnippets = {
       document.getElementById('root'),
     );
     `
-  }
-  
-  
+};
