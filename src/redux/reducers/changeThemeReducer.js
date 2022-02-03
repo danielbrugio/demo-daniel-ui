@@ -1,11 +1,11 @@
-import { CHANGE_THEME } from '../actions/changeThemeAction'
-import { neon } from 'react-neon-ui'
+import { CHANGE_THEME } from "../actions/changeThemeAction";
+import { sea } from "react-daniel-ui";
 
-export const changeThemeReducer = (state = neon, action) => {
+export const changeThemeReducer = (state = sea, action) => {
   switch (action.type) {
     case CHANGE_THEME:
-      return action.payload
+      return action.payload;
     default:
-      return state
+      return state;
   }
-}
+};
