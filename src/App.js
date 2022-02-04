@@ -1,5 +1,5 @@
 import React from "react";
-import "./app.scss";
+import "./app.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { Theming } from "./components/Theming";
