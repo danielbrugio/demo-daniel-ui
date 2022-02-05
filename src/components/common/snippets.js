@@ -1,11 +1,13 @@
 export const ButtonSnippets = {
   variants: `
-    import { Button } from 'react-daniel-ui'
-    <Button variant='primary'> Primary </Button>
-    <Button variant='secondary'> Secondary </Button>
+    import { Button } from 'react-daniel-ui';
+
+    <Button variant='primary'>Primary</Button>
+    <Button variant='secondary'>Secondary</Button>
     `,
   sizes: `
-    import { Button } from 'react-daniel-ui'
+    import { Button } from 'react-daniel-ui';
+
     <Button size='small'>Small</Button>
     <Button size='medium'>Medium</Button>
     <Button size='large'>Large</Button>
@@ -14,121 +16,47 @@ export const ButtonSnippets = {
 
 export const NumberInputSnippets = {
   variants: `
-    import { NumberInput } from 'react-daniel-ui'
-    <TextInput variant='primary' placeholder='Primary'/>
-    <TextInput variant='secondary' placeholder='Secondary'/>
+    import { NumberInput } from 'react-daniel-ui';
+
+    <TextInput variant='primary' placeholder='Primary' />
+    <TextInput variant='secondary' placeholder='Secondary' />
     `,
   sizes: `
-    import { NumberInput } from 'react-daniel-ui'
-    <TextInput size='small' placeholder="Small"/>
-    <TextInput size='medium' placeholder="Medium"/>
-    <TextInput size='large' placeholder="Large"/>
+    import { NumberInput } from 'react-daniel-ui';
+
+    <TextInput size='small' placeholder="Small" />
+    <TextInput size='medium' placeholder="Medium" />
+    <TextInput size='large' placeholder="Large" />
     `,
   formatted: `
-    import { NumberInput } from 'react-daniel-ui'
+    import { NumberInput } from 'react-daniel-ui';
+
     <TextInput />
-    <TextInput formatted="number" />
-    <TextInput formatted="currency" />
+    <TextInput formatted='number' />
+    <TextInput formatted='currency' />
     `
-  /* controlled: `
-    import React, { useState } from "react";
-    import "./App.css";
-    import { NumberInput } from "react-daniel-ui";
-    function App() {
-      const [number, setNumber] = useState("");
-      const handleChange = (e) => {
-        setNumber(e.target.value);
-      };
-      return (
-        <div className="App">
-          <NumberInput
-            value={number}
-            onChange={handleChange}
-          />
-        </div>
-      );
-    }
-    export default App;
-    `,
-    uncontrolled: `
-    import React, { useRef, useState } from "react";
-    import "./App.css";
-    import { NumberInput } from "react-daniel-ui";
-    function App() {
-      const inputRef = useRef(null);
-      const handleRef = () => {
-        alert(inputRef.current.value);
-      };
-      return (
-        <div className="App">
-          <Button onClick={handleRef}>Show Ref</Button>
-          <NumberInput
-            ref={inputRef}
-          />
-        </div>
-      );
-    }
-    export default App;
-    ` */
 };
 
 export const TextInputSnippets = {
   variants: `
-    import { TextInput } from 'react-daniel-ui'
+    import { TextInput } from 'react-daniel-ui';
+
     <TextInput variant='primary' placeholder='Primary'/>
     <TextInput variant='secondary' placeholder='Secondary'/>
     `,
   sizes: `
-    import { TextInput } from 'react-daniel-ui'
+    import { TextInput } from 'react-daniel-ui';
+
     <TextInput size='small' placeholder="Small"/>
     <TextInput size='medium' placeholder="Medium"/>
     <TextInput size='large' placeholder="Large"/>
     `
-  /*  controlled: `
-    import React, { useState } from "react";
-    import "./App.css";
-    import { TextInput } from "react-daniel-ui";
-    function App() {
-      const [text, setText] = useState("");
-      const handleChange = (e) => {
-        setText(e.target.value);
-      };
-      return (
-        <div className="App">
-          <TextInput
-            value={text}
-            onChange={handleChange}
-          />
-        </div>
-      );
-    }
-    export default App;
-    `,
-    uncontrolled: `
-    import React, { useRef, useState } from "react";
-    import "./App.css";
-    import { TextInput } from "react-daniel-ui";
-    function App() {
-      const inputRef = useRef(null);
-      const handleRef = () => {
-        alert(inputRef.current.value);
-      };
-      return (
-        <div className="App">
-          <Button onClick={handleRef}>Show Ref</Button>
-          <TextInput
-            ref={inputRef}
-          />
-        </div>
-      );
-    }
-    export default App;
-    ` */
 };
 
 export const SelectSnippets = {
   variants: `
-    import { Select } from 'react-daniel-ui'
+    import { Select } from 'react-daniel-ui';
+
     <Select
       variant='primary'
       label='Select variant'
@@ -141,7 +69,8 @@ export const SelectSnippets = {
     />
     `,
   sizes: `
-    import { Select } from 'react-daniel-ui'
+    import { Select } from 'react-daniel-ui';
+
     <Select
       size='small'
       label='small'
@@ -159,7 +88,8 @@ export const SelectSnippets = {
     />
     `,
   multiselect: `
-    import { Select } from 'react-daniel-ui'
+    import { Select } from 'react-daniel-ui';
+    
     <Select
       label='Multi Select'
       options={['primary', 'secondary']}
@@ -174,7 +104,7 @@ export const SelectSnippets = {
 
 export const AutocompleteSnippets = {
   variants: `
-    import { Select } from 'react-daniel-ui'
+    import { Select } from "react-daniel-ui";
     const colors = ['blue','red','yellow','green','black','white]
     <Autocomplete variant='primary' suggestions={colors} />
     <Autocomplete variant='secondary' suggestions={colors} />

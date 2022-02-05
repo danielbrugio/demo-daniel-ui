@@ -23,7 +23,7 @@ function App() {
           <Navbar />
           <div className="main">
             <Routes>
-              <Route path="/"></Route>
+              <Route path="/" element={<GettingStarted />} />
               <Route path="/button" element={<ButtonDemo />} />
               <Route path="/gettingstarted" element={<GettingStarted />} />
               <Route path="/textinput" element={<TextInputDemo />} />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import SyntaxHighlighter from 'react-syntax-highlighter'
-import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+import { pojoaque } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import { Button } from 'react-daniel-ui'
 import { Header } from '../Header'
 import { Table } from '../Table'
@@ -55,7 +55,7 @@ export const ButtonDemo = () => {
           <Button style={{ margin: '0 10px' }} variant='secondary'>
             secondary
           </Button>
-          <SyntaxHighlighter language='jsx' style={monokai}>
+          <SyntaxHighlighter language='jsx' style={pojoaque}>
             {ButtonSnippets.variants}
           </SyntaxHighlighter>
           <h1>Sizes</h1>
@@ -68,7 +68,7 @@ export const ButtonDemo = () => {
           <Button style={{ margin: '0 10px' }} size='large'>
             large
           </Button>
-          <SyntaxHighlighter language='jsx' style={monokai}>
+          <SyntaxHighlighter language='jsx' style={pojoaque}>
             {ButtonSnippets.sizes}
           </SyntaxHighlighter>
         </div>

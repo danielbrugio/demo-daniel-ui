@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import SyntaxHighlighter from 'react-syntax-highlighter'
-import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+import { pojoaque } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import { Select } from 'react-daniel-ui'
 import { Header } from '../Header'
 import { Table } from '../Table'
@@ -72,7 +72,7 @@ export const SelectDemo = () => {
               options={['primary', 'secondary']}
             />
           </div>
-          <SyntaxHighlighter language='jsx' style={monokai}>
+          <SyntaxHighlighter language='jsx' style={pojoaque}>
             {SelectSnippets.variants}
           </SyntaxHighlighter>
           <h1>Sizes</h1>
@@ -93,7 +93,7 @@ export const SelectDemo = () => {
               options={['small', 'medium', 'large']}
             />
           </div>
-          <SyntaxHighlighter language='jsx' style={monokai}>
+          <SyntaxHighlighter language='jsx' style={pojoaque}>
             {SelectSnippets.sizes}
           </SyntaxHighlighter>
           <h1>MultiSelect</h1>
@@ -105,7 +105,7 @@ export const SelectDemo = () => {
             />
             <Select label='Single Select' options={['primary', 'secondary']} />
           </div>
-          <SyntaxHighlighter language='jsx' style={monokai}>
+          <SyntaxHighlighter language='jsx' style={pojoaque}>
             {SelectSnippets.multiselect}
           </SyntaxHighlighter>
         </div>

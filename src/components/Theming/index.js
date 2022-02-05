@@ -2,7 +2,7 @@ import React from "react";
 import { Header } from "../Header";
 import { ThemeSnippets } from "../common/snippets";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { monokai } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { pojoaque } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 export const Theming = () => {
   return (
@@ -19,7 +19,7 @@ export const Theming = () => {
           render tree all styled-components will have access to the provided
           theme, even when they are multiple levels deep.
         </p>
-        <SyntaxHighlighter language="jsx" style={monokai}>
+        <SyntaxHighlighter language="jsx" style={pojoaque}>
           {ThemeSnippets.changeTheme}
         </SyntaxHighlighter>
         <h1>How to make a custom theme</h1>
@@ -28,11 +28,11 @@ export const Theming = () => {
           themeprovider based on the template below, modifying the colors or
           fonts you want.
         </p>
-        <SyntaxHighlighter language="jsx" style={monokai}>
+        <SyntaxHighlighter language="jsx" style={pojoaque}>
           {ThemeSnippets.themeTemplate}
         </SyntaxHighlighter>
         <p>Now you just have to pass the custom theme to the provider</p>
-        <SyntaxHighlighter language="jsx" style={monokai}>
+        <SyntaxHighlighter language="jsx" style={pojoaque}>
           {ThemeSnippets.customTheme}
         </SyntaxHighlighter>
       </div>

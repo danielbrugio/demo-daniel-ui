@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import SyntaxHighlighter from 'react-syntax-highlighter'
-import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+import { pojoaque } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import { Autocomplete } from 'react-daniel-ui'
 import { Header } from '../Header'
 import { Table } from '../Table'
@@ -66,7 +66,7 @@ export const AutocompleteDemo = () => {
               placeholder='Top Movies'
             />
           </div>
-          <SyntaxHighlighter language='jsx' style={monokai}>
+          <SyntaxHighlighter language='jsx' style={pojoaque}>
             {AutocompleteSnippets.variants}
           </SyntaxHighlighter>
           <h1>Sizes</h1>
@@ -93,7 +93,7 @@ export const AutocompleteDemo = () => {
               placeholder='Top Movies'
             />
           </div>
-          <SyntaxHighlighter language='jsx' style={monokai}>
+          <SyntaxHighlighter language='jsx' style={pojoaque}>
             {AutocompleteSnippets.sizes}
           </SyntaxHighlighter>
         </div>

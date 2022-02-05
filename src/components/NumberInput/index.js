@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NumberInput } from "react-daniel-ui";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { monokai } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { pojoaque } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { Header } from "../Header";
 import { Table } from "../Table";
 import { NumberInputSnippets } from "../common/snippets";
@@ -63,7 +63,7 @@ export const NumberInputDemo = () => {
             variant="secondary"
             placeholder="Secondary"
           />
-          <SyntaxHighlighter language="jsx" style={monokai}>
+          <SyntaxHighlighter language="jsx" style={pojoaque}>
             {NumberInputSnippets.variants}
           </SyntaxHighlighter>
           <h1>Sizes</h1>
@@ -82,7 +82,7 @@ export const NumberInputDemo = () => {
             size="large"
             placeholder="Large"
           />
-          <SyntaxHighlighter language="jsx" style={monokai}>
+          <SyntaxHighlighter language="jsx" style={pojoaque}>
             {NumberInputSnippets.sizes}
           </SyntaxHighlighter>
           <h1>formatted</h1>
@@ -97,7 +97,7 @@ export const NumberInputDemo = () => {
             value="$1,000,000"
             formatted="currency"
           />
-          <SyntaxHighlighter language="jsx" style={monokai}>
+          <SyntaxHighlighter language="jsx" style={pojoaque}>
             {NumberInputSnippets.formatted}
           </SyntaxHighlighter>
           {/* <h1>controlled use</h1>

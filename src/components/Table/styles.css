@@ -1,0 +1,47 @@
+.table {
+    padding: 50px;
+  }
+  
+  .table h1 {
+    color: white;
+  }
+  
+  .table p {
+    color: white;
+  }
+
+  .table__grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  
+  .table__grid h3 {
+    color: white;
+    font-size: 25px;
+    border: 1px solid #ffe6e6;
+    padding: 5px;
+  }
+
+  .table__grid span {
+    color: white;
+    font-size: 20px;
+    border: 1px solid #ffe6e6;
+    padding: 5px;
+    word-wrap: break-word;
+  }
+
+  /* @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .table {
+      padding: 10px;
+  
+      .table__grid > h3 {
+        font-size: 1em;
+        padding: 7px;
+      }
+  
+      .table__grid > span {
+        font-size: 0.95em;
+        padding: 7px;
+      }
+    }
+  } */

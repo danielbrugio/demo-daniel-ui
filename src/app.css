@@ -19,7 +19,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #9c5656;
   box-sizing: border-box;
   font-family: "Montserrat Alternates", sans-serif;
 }
@@ -34,9 +34,9 @@ h5 {
 
 .app {
   display: flex;
-  @media screen and (max-width: 1023px) {
+  /* @media screen and (max-width: 1023px) {
     font-size: 16px;
-  }
+  } */
 }
 
 .main {
@@ -48,7 +48,7 @@ h5 {
 }
 
 .usecases p {
-  color: #1b54d6;
+  color: white;
 }
 
 .usecases h1 {

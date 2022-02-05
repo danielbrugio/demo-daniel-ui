@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { monokai } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { pojoaque } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { TextInputSnippets } from "../common/snippets";
 import { Header } from "../Header";
 import { Table } from "../Table";
@@ -57,7 +57,7 @@ export const TextInputDemo = () => {
             variant="secondary"
             placeholder="Secondary"
           />
-          <SyntaxHighlighter language="jsx" style={monokai}>
+          <SyntaxHighlighter language="jsx" style={pojoaque}>
             {TextInputSnippets.variants}
           </SyntaxHighlighter>
           <h1>Sizes</h1>
@@ -76,17 +76,9 @@ export const TextInputDemo = () => {
             size="large"
             placeholder="Large"
           />
-          <SyntaxHighlighter language="jsx" style={monokai}>
+          <SyntaxHighlighter language="jsx" style={pojoaque}>
             {TextInputSnippets.sizes}
           </SyntaxHighlighter>
-          {/* <h1>controlled use</h1>
-          <SyntaxHighlighter language='jsx' style={monokai}>
-            {TextInputSnippets.controlled}
-          </SyntaxHighlighter>
-          <h1>Uncontrolled use</h1>
-          <SyntaxHighlighter language='jsx' style={monokai}>
-            {TextInputSnippets.uncontrolled}
-          </SyntaxHighlighter> */}
         </div>
       )}
     </div>
