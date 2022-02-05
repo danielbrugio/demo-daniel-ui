@@ -1,8 +1,10 @@
-@import './components/Navbar/styles.scss';
+/* @import './components/Navbar/styles.scss';
 @import './components/Header/styles.scss';
-@import './components/Table/styles.scss';
+@import './components/Table/styles.scss'; */
 
-@font-face {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+
+/* @font-face {
   font-family: Inter;
   src: url(../public/Fonts/Inter-Regular.ttf);
 }
@@ -10,7 +12,7 @@
 @font-face {
   font-family: Courgette;
   src: url(../public/Fonts/Courgette-Regular.ttf);
-}
+} */
 
 html,
 body {
@@ -19,7 +21,7 @@ body {
   height: 100%;
   background-color: #ffffff;
   box-sizing: border-box;
-  font-family: 'Courgette', cursive;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 h1,
 h2,
@@ -43,11 +45,13 @@ h5 {
 
 .usecases {
   padding: 20px;
-  p {
-    color: #1b54d6;
-  }
-  h1 {
-    color: black;
-    margin-bottom: 20px;
-  }
+}
+
+.usecases p {
+  color: #1b54d6;
+}
+
+.usecases h1 {
+  color: black;
+  margin-bottom: 20px;
 }

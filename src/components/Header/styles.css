@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+  background-color: #ffffff;
+
+  /*  @media screen and (max-width: 766px) {
+      display: block;
+      height: auto;
+      text-align: center;
+      width: auto;
+    } */
+}
+
+.header h2 {
+  margin: 10px;
+  color: black;
+  font-size: 30px;
+}
+
+.header__tags {
+  width: 100%;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* @media screen and (max-width: 766px) {
+      display: block;
+    } */
+}
+
+.header__tags--right {
+  display: flex;
+  align-items: center;
+  color: #1b54d6;
+
+  /*  @media screen and (max-width: 766px) {
+    margin-top: 10px;
+  } */
+}
+
+.header__tags--right h3 {
+  margin: 0 5px;
+}
+
+.header__tags--right button {
+  margin: 0 5px;
+}
+
+.tagselect {
+  font-family: "Inter", cursive;
+  border: none;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 500ms;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.tagunselect {
+  font-family: "Inter", cursive;
+  border: none;
+  background-color: transparent;
+  color: #939393;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 500ms;
+  outline: none;
+}
+
+.tagunselect :hover {
+  color: #1b54d6;
+  border-bottom: 1px solid #1b54d6;
+}

@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
+import "./styles.css";
 import { Link, useLocation } from "react-router-dom";
-import { GiHamburgerMenu } from "react-icons/gi";
+//import { GiHamburgerMenu } from "react-icons/gi";
 import { useOnClickOutside } from "../../hooks/useOnClickOutside";
 
 const routes = [
@@ -12,32 +13,33 @@ const routes = [
   { url: "/theming", name: "Theming" }
 ];
 export const Navbar = () => {
-  const navbarRef = useRef(null);
+  //const navbarRef = useRef(null);
   const location = useLocation();
-  const [navBar, setNavBar] = useState(false);
+  //const [navBar, setNavBar] = useState(false);
 
-  const toggleNavbar = () => {
+  /*  const toggleNavbar = () => {
     setNavBar(!navBar);
-  };
+  }; */
 
-  const closeNavbar = () => setNavBar(false);
+  //const closeNavbar = () => setNavBar(false);
 
-  useOnClickOutside(navbarRef, navBar, closeNavbar);
+  //useOnClickOutside(navbarRef, navBar, closeNavbar);
 
   const currentlyActiveTab = (url) => {
     return url === location.pathname;
   };
 
-  useEffect(() => {
+  /* useEffect(() => {
     closeNavbar();
-  }, [location.pathname]);
+  }, [location.pathname]); */
 
   return (
     <div className="navbar">
-      <img className="logo" src={""} />
+      <img className="logo" src={""} alt="" />
       <ul
-        className={navBar ? "navbar__list active" : "navbar__list"}
-        ref={navbarRef}
+        /* className={navBar ? "navbar__list active" : "navbar__list"}
+        ref={navbarRef} */
+        className="navbar__list"
       >
         {routes.map((route) => {
           return (
@@ -52,9 +54,9 @@ export const Navbar = () => {
           );
         })}
       </ul>
-      <button onClick={toggleNavbar} className="navbar-toggle">
+      {/* <button onClick={toggleNavbar} className="navbar-toggle">
         <GiHamburgerMenu className="navbar-toggle-button" size={25} />
-      </button>
+      </button> */}
     </div>
   );
 };
