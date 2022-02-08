@@ -1,18 +1,4 @@
-/* @import './components/Navbar/styles.scss';
-@import './components/Header/styles.scss';
-@import './components/Table/styles.scss'; */
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
-
-/* @font-face {
-  font-family: Inter;
-  src: url(../public/Fonts/Inter-Regular.ttf);
-}
-
-@font-face {
-  font-family: Courgette;
-  src: url(../public/Fonts/Courgette-Regular.ttf);
-} */
 
 html,
 body {
@@ -34,9 +20,6 @@ h5 {
 
 .app {
   display: flex;
-  /* @media screen and (max-width: 1023px) {
-    font-size: 16px;
-  } */
 }
 
 .main {
