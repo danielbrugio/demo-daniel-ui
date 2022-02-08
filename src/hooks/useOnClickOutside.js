@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+/* import { useEffect } from 'react'
 
 export const useOnClickOutside = (ref, dependence, handler) => {
   const onClickOutside = (event) => {
@@ -20,4 +20,4 @@ export const useOnClickOutside = (ref, dependence, handler) => {
       document.removeEventListener('touchstart', onClickOutside)
     }
   }, [dependence])
-}
+} */

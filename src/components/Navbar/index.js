@@ -1,15 +1,17 @@
-import React, { useRef, useState, useEffect } from "react";
+import React from "react";
 import "./styles.css";
+import Logo from '../assets/DanielUI.jpg'
 import { Link, useLocation } from "react-router-dom";
 //import { GiHamburgerMenu } from "react-icons/gi";
-import { useOnClickOutside } from "../../hooks/useOnClickOutside";
+//import { useOnClickOutside } from "../../hooks/useOnClickOutside";
 
 const routes = [
   { url: "/gettingstarted", name: "Getting Started" },
-  { url: "/button", name: "Button" },
-  { url: "/textinput", name: "TextInput" },
-  { url: "/numberinput", name: "NumberInput" },
   { url: "/autocomplete", name: "Autocomplete" },
+  { url: "/button", name: "Button" },
+  { url: "/numberinput", name: "NumberInput" },
+  { url: "/select", name: "Select" },
+  { url: "/textinput", name: "TextInput" },  
   { url: "/theming", name: "Theming" }
 ];
 export const Navbar = () => {
@@ -35,7 +37,7 @@ export const Navbar = () => {
 
   return (
     <div className="navbar">
-      <img className="logo" src={""} alt="" />
+      <img className="logo" src={Logo} alt="" />
       <ul
         /* className={navBar ? "navbar__list active" : "navbar__list"}
         ref={navbarRef} */
