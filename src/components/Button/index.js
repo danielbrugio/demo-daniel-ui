@@ -16,25 +16,25 @@ export const ButtonDemo = () => {
       title: 'variant',
       type: '"primary", "secondary"',
       default: 'primary',
-      Description: 'Choose a variant'
+      description: 'Choose a variant'
     },
     {
       title: 'size',
       type: '"small", "medium", "large"',
       default: 'medium',
-      Description: `Choose the size`
+      description: `Choose the size`
     },
     {
       title: 'onClick',
       type: 'func',
       default: 'noop',
-      Description: `funcion to call when button press`
+      description: `funcion to call when button press`
     },
     {
       title: 'disable',
       type: 'bool',
       default: 'false',
-      Description: `Set disable to true if interaction with button isn't available to user`
+      description: `Set disable to true if interaction with button isn't available to user`
     }
   ]
 

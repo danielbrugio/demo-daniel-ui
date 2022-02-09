@@ -17,31 +17,31 @@ export const AutocompleteDemo = () => {
       title: 'variant',
       type: '"primary", "secondary"',
       default: 'primary',
-      Description: 'Choose a variant'
+      description: 'Choose a variant'
     },
     {
       title: 'size',
       type: '"small", "medium", "large"',
       default: 'medium',
-      Description: `Choose the size`
+      description: `Choose the size`
     },
     {
       title: 'onChange',
       type: 'func',
       default: 'noop',
-      Description: `funcion to call when select an option`
+      description: `funcion to call when select an option`
     },
     {
       title: 'placeholder',
       type: 'string',
       default: '""',
-      Description: `Add a placeholder text`
+      description: `Add a placeholder text`
     },
     {
       title: 'suggestions',
       type: 'array',
       default: '[]',
-      Description: `Array with the suggestions for autocomplete`
+      description: `Array with the suggestions for autocomplete`
     }
   ]
 

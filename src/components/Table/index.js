@@ -17,7 +17,7 @@ export const Table = ({ title, description, data }) => {
               <span>{element.title}</span>
               <span>{element.type}</span>
               <span>{element.default}</span>
-              <span>{element.Description}</span>
+              <span>{element.description}</span>
             </>
           ))}
         </div>

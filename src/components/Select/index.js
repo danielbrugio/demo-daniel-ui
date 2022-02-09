@@ -16,37 +16,37 @@ export const SelectDemo = () => {
       title: 'variant',
       type: '"primary", "secondary"',
       default: 'primary',
-      Description: 'Choose a variant'
+      description: 'Choose a variant'
     },
     {
       title: 'size',
       type: '"small", "medium", "large"',
       default: 'medium',
-      Description: `choose a size`
+      description: `choose a size`
     },
     {
       title: 'onChange',
       type: 'func',
       default: 'noop',
-      Description: `funcion to call when select an option`
+      description: `funcion to call when select an option`
     },
     {
       title: 'label',
       type: 'string',
       default: '""',
-      Description: `Add a label text to the select`
+      description: `Add a label text to the select`
     },
     {
       title: 'options',
       type: 'array',
       default: '[]',
-      Description: `Array with the options`
+      description: `Array with the options`
     },
     {
       title: 'multiple',
       type: 'bool',
       default: 'false',
-      Description: `True to allow multiple selection`
+      description: `True to allow multiple selection`
     }
   ]
 

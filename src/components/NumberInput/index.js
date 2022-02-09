@@ -16,31 +16,31 @@ export const NumberInputDemo = () => {
       title: "variant",
       type: '"primary", "secondary"',
       default: "primary",
-      Description: "Choose a variant"
+      description: "Choose a variant"
     },
     {
       title: "size",
       type: '"small", "medium", "large"',
       default: "medium",
-      Description: `choose a size`
+      description: `choose a size`
     },
     {
       title: "onChange",
       type: "func",
       default: "noop",
-      Description: `funcion to call when input change`
+      description: `funcion to call when input change`
     },
     {
       title: "placeholder",
       type: "string",
       default: '""',
-      Description: `Add a text placeholder to the NumberInput`
+      description: `Add a text placeholder to the NumberInput`
     },
     {
       title: "formatted",
       type: '"number", "currency"',
       default: "false",
-      Description: `Choose the format for the numbers`
+      description: `Choose the format for the numbers`
     }
   ];
 

@@ -62,6 +62,7 @@ export const SelectSnippets = {
       label='Select variant'
       options={['primary', 'secondary']}
     />
+    
     <Select
       variant='secondary'
       label='Select variant'
@@ -76,11 +77,13 @@ export const SelectSnippets = {
       label='small'
       options={['small', 'medium', 'large']}
     />
+
     <Select
       size='medium'
       label='medium'
       options={['small', 'medium', 'large']}
     />
+
     <Select
       size='large'
       label='large'
@@ -95,6 +98,7 @@ export const SelectSnippets = {
       options={['primary', 'secondary']}
     multiple
     />
+
     <Select
       label='Single Select'
       options={['primary', 'secondary']}
@@ -105,13 +109,17 @@ export const SelectSnippets = {
 export const AutocompleteSnippets = {
   variants: `
     import { Select } from "react-daniel-ui";
+
     const colors = ['blue','red','yellow','green','black','white]
+
     <Autocomplete variant='primary' suggestions={colors} />
     <Autocomplete variant='secondary' suggestions={colors} />
     `,
   sizes: `
     import { Select } from 'react-daniel-ui'
+
     const colors = ['blue','red','yellow','green','black','white]
+
     <Autocomplete size='small' suggestions={colors} />
     <Autocomplete size='medium' suggestions={colors} />
     <Autocomplete size='large' suggestions={colors} />

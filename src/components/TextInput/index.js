@@ -16,25 +16,25 @@ export const TextInputDemo = () => {
       title: "variant",
       type: '"primary","secondary"',
       default: "primary",
-      Description: "Choose a variant"
+      description: "Choose a variant"
     },
     {
       title: "size",
       type: '"small","medium","large"',
       default: "medium",
-      Description: `Choose a size`
+      description: `Choose a size`
     },
     {
       title: "onChange",
       type: "func",
       default: "noop",
-      Description: `funcion to call when input changes`
+      description: `funcion to call when input changes`
     },
     {
       title: "placeholder",
       type: "string",
       default: '""',
-      Description: `Add a text placeholder to the textInput`
+      description: `Add a text placeholder to the textInput`
     }
   ];
 
