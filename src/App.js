@@ -1,7 +1,6 @@
 import React from "react";
 import "./app.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import { Theming } from "./components/Theming";
 import { useSelector } from "react-redux";
 import { ThemeProvider } from "styled-components";
