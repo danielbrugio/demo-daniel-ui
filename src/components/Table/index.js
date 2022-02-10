@@ -3,23 +3,31 @@ import './styles.css'
 
 export const Table = ({ title, description, data }) => {
   return (
-    <div className='table'>
+    <div className='title'>
       <h1>{title}</h1>
       <p>{description}</p>
       {data && (
         <div className='table__grid'>
-          <h3>Title</h3>
-          <h3>Type</h3>
-          <h3>Default value</h3>
-          <h3>Description</h3>
+        <table className=''>
+        <thead>
+        <tr>
+          <th>Title</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Description</th>
+          </tr>
+          </thead>
           {data.map((element) => (
-            <>
-              <span>{element.title}</span>
-              <span>{element.type}</span>
-              <span>{element.default}</span>
-              <span>{element.description}</span>
-            </>
+            <tbody key={element.title}>
+            <tr>
+              <td >{element.title}</td>
+              <td >{element.type}</td>
+              <td >{element.default}</td>
+              <td >{element.description}</td>
+            </tr>
+              </tbody>
           ))}
+          </table>
         </div>
       )}
     </div>
