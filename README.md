@@ -1,9 +1,3 @@
-<p align="center">
-  <a href="">
-    <img src="../src/components/assets/DanielUI.jpg" alt="" width="200" />
-  </a>
-</p>
-
 <h1 align="center">Demo App for React component library based on styled components </h1>
 
 
@@ -37,4 +31,4 @@ npm start
 
 [Demo App here](https://demo-daniel-ui.vercel.app/gettingstarted)
 
-[Github Repository react-neon-ui]()
+[Github Repository react-daniel-ui](https://github.com/danielbrugio/react-daniel-ui)
