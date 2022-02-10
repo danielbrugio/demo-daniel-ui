@@ -13,37 +13,37 @@ export const SelectDemo = () => {
 
   const dataTable = [
     {
-      title: 'variant',
+      name: 'variant',
       type: '"primary", "secondary"',
       default: 'primary',
       description: 'Choose a variant'
     },
     {
-      title: 'size',
+      name: 'size',
       type: '"small", "medium", "large"',
       default: 'medium',
       description: `choose a size`
     },
     {
-      title: 'onChange',
+      name: 'onChange',
       type: 'func',
       default: 'noop',
       description: `funcion to call when select an option`
     },
     {
-      title: 'label',
+      name: 'label',
       type: 'string',
       default: '""',
       description: `Add a label text to the select`
     },
     {
-      title: 'options',
+      name: 'options',
       type: 'array',
       default: '[]',
       description: `Array with the options`
     },
     {
-      title: 'multiple',
+      name: 'multiple',
       type: 'bool',
       default: 'false',
       description: `True to allow multiple selection`
@@ -53,7 +53,7 @@ export const SelectDemo = () => {
   return (
     <div>
       <Header title='Select' changeTag={changeTag} />
-      {tag === 'general' && (
+      {tag === 'props' && (
         <Table
           title='Select'
           description='Select with multiple choice'

@@ -46,10 +46,10 @@ export const NumberInputDemo = () => {
 
   return (
     <div>
-      <Header title="NumberInput" changeTag={changeTag} />
-      {tag === "general" && (
+      <Header title="Number Input" changeTag={changeTag} />
+      {tag === "props" && (
         <Table
-          title="NumberInput"
+          title="Number Input"
           description="Input that only receives numbers and can format thems"
           data={dataTable}
         />
@@ -100,14 +100,6 @@ export const NumberInputDemo = () => {
           <SyntaxHighlighter language="jsx" style={pojoaque}>
             {NumberInputSnippets.formatted}
           </SyntaxHighlighter>
-          {/* <h1>controlled use</h1>
-          <SyntaxHighlighter language='jsx' style={monokai}>
-            {NumberInputSnippets.controlled}
-          </SyntaxHighlighter>
-          <h1>Uncontrolled use</h1>
-          <SyntaxHighlighter language='jsx' style={monokai}>
-            {NumberInputSnippets.uncontrolled}
-          </SyntaxHighlighter> */}
         </div>
       )}
     </div>

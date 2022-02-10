@@ -13,25 +13,25 @@ export const TextInputDemo = () => {
 
   const dataTable = [
     {
-      title: "variant",
+      name: "variant",
       type: '"primary","secondary"',
       default: "primary",
       description: "Choose a variant"
     },
     {
-      title: "size",
+      name: "size",
       type: '"small","medium","large"',
       default: "medium",
       description: `Choose a size`
     },
     {
-      title: "onChange",
+      name: "onChange",
       type: "func",
       default: "noop",
       description: `funcion to call when input changes`
     },
     {
-      title: "placeholder",
+      name: "placeholder",
       type: "string",
       default: '""',
       description: `Add a text placeholder to the textInput`
@@ -40,10 +40,10 @@ export const TextInputDemo = () => {
 
   return (
     <div>
-      <Header title="TextInput" changeTag={changeTag} />
-      {tag === "general" && (
+      <Header title="Text Input" changeTag={changeTag} />
+      {tag === "props" && (
         <Table
-          title="TextInput"
+          title="Text Input"
           description="It is used to create interactive controls for web-based forms to receive user data."
           data={dataTable}
         />

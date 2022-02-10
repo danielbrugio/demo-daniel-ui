@@ -13,25 +13,25 @@ export const ButtonDemo = () => {
 
   const dataTable = [
     {
-      title: 'variant',
+      name: 'variant',
       type: '"primary", "secondary"',
       default: 'primary',
       description: 'Choose a variant'
     },
     {
-      title: 'size',
+      name: 'size',
       type: '"small", "medium", "large"',
       default: 'medium',
       description: `Choose the size`
     },
     {
-      title: 'onClick',
+      name: 'onClick',
       type: 'func',
       default: 'noop',
       description: `funcion to call when button press`
     },
     {
-      title: 'disable',
+      name: 'disable',
       type: 'bool',
       default: 'false',
       description: `Set disable to true if interaction with button isn't available to user`
@@ -41,10 +41,10 @@ export const ButtonDemo = () => {
   return (
     <div>
       <Header title='Button' changeTag={changeTag} />
-      {tag === 'general' && (
+      {tag === 'props' && (
         <Table
           title='Button'
-          description='Represent a clickable button element that triggers an event'
+          description='Buttons allow users to take actions, and make choices, with a single tap'
           data={dataTable}
         />
       )}

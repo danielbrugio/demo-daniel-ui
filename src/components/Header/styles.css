@@ -2,19 +2,12 @@
   display: flex;
   align-items: center;
   height: 40px;
-  padding: 10px;
+  padding: 15px;
   background-color: #ffffff;
-
-  /*  @media screen and (max-width: 766px) {
-      display: block;
-      height: auto;
-      text-align: center;
-      width: auto;
-    } */
 }
 
 .header h2 {
-  margin: 10px;
+  margin: 5px;
   color: black;
   font-size: 30px;
 }
@@ -25,19 +18,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* @media screen and (max-width: 766px) {
-      display: block;
-    } */
 }
 
 .header__tags--right {
   display: flex;
   align-items: center;
   color: #1b54d6;
-
-  /*  @media screen and (max-width: 766px) {
-    margin-top: 10px;
-  } */
 }
 
 .header__tags--right h3 {

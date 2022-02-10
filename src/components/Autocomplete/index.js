@@ -14,31 +14,31 @@ export const AutocompleteDemo = () => {
 
   const dataTable = [
     {
-      title: 'variant',
+      name: 'variant',
       type: '"primary", "secondary"',
       default: 'primary',
       description: 'Choose a variant'
     },
     {
-      title: 'size',
+      name: 'size',
       type: '"small", "medium", "large"',
       default: 'medium',
       description: `Choose the size`
     },
     {
-      title: 'onChange',
+      name: 'onChange',
       type: 'func',
       default: 'noop',
       description: `funcion to call when select an option`
     },
     {
-      title: 'placeholder',
+      name: 'placeholder',
       type: 'string',
       default: '""',
       description: `Add a placeholder text`
     },
     {
-      title: 'suggestions',
+      name: 'suggestions',
       type: 'array',
       default: '[]',
       description: `Array with the suggestions for autocomplete`
@@ -48,10 +48,10 @@ export const AutocompleteDemo = () => {
   return (
     <div>
       <Header title='Autocomplete' changeTag={changeTag} />
-      {tag === 'general' && (
+      {tag === 'props' && (
         <Table
           title='Autocomplete'
-          description='Input with suggestions'
+          description='The autocomplete is a normal text input enhanced by a panel of suggested options.'
           data={dataTable}
         />
       )}

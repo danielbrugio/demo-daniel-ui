@@ -27,10 +27,10 @@ export const Header = ({ title, changeTag = () => {}, hideTags = false }) => {
         <div className="header__tags">
           <div className="header__tags--left">
             <button
-              onClick={() => setTag("general")}
-              className={tag === "general" ? "tagselect" : "tagunselect"}
+              onClick={() => setTag("props")}
+              className={tag === "props" ? "tagselect" : "tagunselect"}
             >
-              General
+              Props
             </button>
             <button
               onClick={() => setTag("useCases")}

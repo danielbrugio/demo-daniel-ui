@@ -11,16 +11,16 @@ export const Table = ({ title, description, data }) => {
         <table className=''>
         <thead>
         <tr>
-          <th>Title</th>
+          <th>Name</th>
           <th>Type</th>
           <th>Default value</th>
           <th>Description</th>
           </tr>
           </thead>
           {data.map((element) => (
-            <tbody key={element.title}>
+            <tbody key={element.name}>
             <tr>
-              <td >{element.title}</td>
+              <td >{element.name}</td>
               <td >{element.type}</td>
               <td >{element.default}</td>
               <td >{element.description}</td>
