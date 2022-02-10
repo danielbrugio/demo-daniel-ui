@@ -13,31 +13,31 @@ export const NumberInputDemo = () => {
 
   const dataTable = [
     {
-      title: "variant",
+      name: "variant",
       type: '"primary", "secondary"',
       default: "primary",
       description: "Choose a variant"
     },
     {
-      title: "size",
+      name: "size",
       type: '"small", "medium", "large"',
       default: "medium",
       description: `choose a size`
     },
     {
-      title: "onChange",
+      name: "onChange",
       type: "func",
       default: "noop",
       description: `funcion to call when input change`
     },
     {
-      title: "placeholder",
+      name: "placeholder",
       type: "string",
       default: '""',
       description: `Add a text placeholder to the NumberInput`
     },
     {
-      title: "formatted",
+      name: "formatted",
       type: '"number", "currency"',
       default: "false",
       description: `Choose the format for the numbers`
