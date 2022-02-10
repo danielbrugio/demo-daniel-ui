@@ -1,14 +1,11 @@
 <p align="center">
   <a href="">
-    <img src="" alt="" width="200" />
+    <img src="../src/components/assets/DanielUI.jpg" alt="" width="200" />
   </a>
 </p>
 
-<h1 align="center">React component library based on styled components </h1>
-<p align="center">
-  <img alt="MIT License" src=""/>
-  <img alt="NPM version" src="" />
-</p>
+<h1 align="center">Demo App for React component library based on styled components </h1>
+
 
 ## Demo-documentation for react-daniel-ui component library.
 
@@ -38,6 +35,6 @@ npm start
 
 # Links
 
-[Documentation click here]()
+[Demo App here](https://demo-daniel-ui.vercel.app/gettingstarted)
 
 [Github Repository react-neon-ui]()
